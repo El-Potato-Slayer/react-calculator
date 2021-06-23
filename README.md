@@ -1,4 +1,4 @@
-# Illusioned
+# Calculator
 A calculator application.
 
 [Live Demo](https://react-calculator-ochre.vercel.app/)
