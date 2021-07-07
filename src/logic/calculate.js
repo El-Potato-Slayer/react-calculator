@@ -1,6 +1,9 @@
-export default function calculate(calcData, buttonName) {
-  // I have no idea what the 'next' properties is supposed to be. Mind providing an explanation?
-  const data = calcData;
+import Operate from './operate'
+
+export default function calculate({total, next, operation}, buttonName) {
+  // I still have no idea what the 'next' property is supposed to do. Mind providing a more detailed explanation?
+  // If 34 + 24 is the input, is the 24 the 'next' property?
+  const data = {total, next, operation};
 
   if (buttonName === 'AC') {
     data.total = '0';
@@ -11,7 +14,7 @@ export default function calculate(calcData, buttonName) {
     data.next *= -1;
   }
   if (buttonName === '%') {
-    data.total = (data.total * 0.01).toString();
+    data.total = (total * 0.01).toString();
   }
   if (buttonName === '=') {
     // Need to understand what next is before I can implement all conditionals
