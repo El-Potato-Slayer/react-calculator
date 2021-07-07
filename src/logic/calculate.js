@@ -1,9 +1,8 @@
-import Operate from './operate'
-
-export default function calculate({total, next, operation}, buttonName) {
-  // I still have no idea what the 'next' property is supposed to do. Mind providing a more detailed explanation?
+export default function calculate({ total, next, operation }, buttonName) {
+  // I still have no idea what the 'next' property is supposed to do.
+  // Mind providing a more detailed explanation?
   // If 34 + 24 is the input, is the 24 the 'next' property?
-  const data = {total, next, operation};
+  const data = { total, next, operation };
 
   if (buttonName === 'AC') {
     data.total = '0';

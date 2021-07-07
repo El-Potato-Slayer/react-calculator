@@ -2,8 +2,8 @@ import Big from 'big.js';
 
 export default function operate(numberOne, numberTwo, operation) {
   let output;
-  const num1 = Big(numberOne)
-  const num2 = Big(numberTwo)
+  const num1 = Big(numberOne);
+  const num2 = Big(numberTwo);
   if (operation === '+') {
     output = num1.plus(num2);
   }
