@@ -30,37 +30,77 @@ export default function calculate({ total, next, operation }, buttonName) {
     }
   }
 
-  if (buttonName === 'AC') {
-    data.total = '0';
-    data.next = '';
-    data.operation = '';
+  switch (buttonName) {
+    case 'AC':
+      data.total = '0';
+      data.next = '';
+      data.operation = '';
+      break;
+
+    case '+/-':
+      if (!next) {
+        data.total = (total * 0.01).toString();
+      } else {
+        data.next = (next * 0.01).toString();
+      }
+      break;
+
+    case '%':
+      if (!next) {
+        data.total = (total * 0.01).toString();
+      } else {
+        data.next = (next * 0.01).toString();
+      }
+      break;
+
+    case '.':
+      if (!next && !/[.]/.test(total)) {
+        data.total = `${total}.`;
+      } else if (next && !/[.]/.test(next)) {
+        data.next = `${next}.`;
+      }
+      break;
+
+    case '=':
+      data.total = operate(total, next, operation).toString();
+      data.next = '';
+      data.operation = '';
+      break;
+
+    default:
+      break;
   }
-  if (buttonName === '+/-') {
-    if (!next) {
-      data.total *= -1;
-    } else {
-      data.next *= -1;
-    }
-  }
-  if (buttonName === '%') {
-    if (!next) {
-      data.total = (total * 0.01).toString();
-    } else {
-      data.next = (next * 0.01).toString();
-    }
-  }
-  if (buttonName === '.') {
-    if (!next && !/[.]/.test(total)) {
-      data.total = `${total}.`;
-    } else if (next && !/[.]/.test(next)) {
-      data.next = `${next}.`;
-    }
-  }
-  if (buttonName === '=') {
-    data.total = operate(total, next, operation).toString();
-    data.next = '';
-    data.operation = '';
-  }
+  // if (buttonName === 'AC') {
+  //   data.total = '0';
+  //   data.next = '';
+  //   data.operation = '';
+  // }
+  // if (buttonName === '+/-') {
+  //   if (!next) {
+  //     data.total *= -1;
+  //   } else {
+  //     data.next *= -1;
+  //   }
+  // }
+  // if (buttonName === '%') {
+  //   if (!next) {
+  //     data.total = (total * 0.01).toString();
+  //   } else {
+  //     data.next = (next * 0.01).toString();
+  //   }
+  // }
+  // if (buttonName === '.') {
+  //   if (!next && !/[.]/.test(total)) {
+  //     data.total = `${total}.`;
+  //   } else if (next && !/[.]/.test(next)) {
+  //     data.next = `${next}.`;
+  //   }
+  // }
+  // if (buttonName === '=') {
+  //   data.total = operate(total, next, operation).toString();
+  //   data.next = '';
+  //   data.operation = '';
+  // }
 
   return data;
 }
