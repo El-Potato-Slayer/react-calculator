@@ -39,9 +39,9 @@ export default function calculate({ total, next, operation }, buttonName) {
 
     case '+/-':
       if (!next) {
-        data.total = (total * 0.01).toString();
+        data.total *= -1;
       } else {
-        data.next = (next * 0.01).toString();
+        data.next *= -1;
       }
       break;
 
