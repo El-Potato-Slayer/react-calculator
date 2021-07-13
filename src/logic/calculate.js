@@ -1,22 +1,66 @@
+import operate from './operate';
+
 export default function calculate({ total, next, operation }, buttonName) {
-  // I still have no idea what the 'next' property is supposed to do.
-  // Mind providing a more detailed explanation?
-  // If 34 + 24 is the input, is the 24 the 'next' property?
   const data = { total, next, operation };
+  const isNumber = !Number.isNaN(parseInt(buttonName, 10));
+  const isOperation = /[-+÷×]/.test(buttonName);
+  const isFirstNum = !operation;
+
+  if ((isNumber || !total) && isFirstNum && !isOperation) {
+    if (total === null) {
+      data.total = buttonName;
+    } else {
+      data.total += buttonName;
+    }
+  } else if (isNumber && !isFirstNum) {
+    if (!next) {
+      data.next = buttonName;
+    } else {
+      data.next += buttonName;
+    }
+  } else if (buttonName !== '+/-' && isOperation) {
+    if (total && total[total.length - 1] === '.') {
+      data.total += '0';
+    }
+    if (next && next[next.length - 1] === '.') {
+      data.next += '0';
+    }
+    if (total) {
+      data.operation = buttonName;
+    }
+  }
 
   if (buttonName === 'AC') {
     data.total = '0';
+    data.next = '';
     data.operation = '';
   }
   if (buttonName === '+/-') {
-    data.total *= -1;
-    data.next *= -1;
+    if (!next) {
+      data.total *= -1;
+    } else {
+      data.next *= -1;
+    }
   }
   if (buttonName === '%') {
-    data.total = (total * 0.01).toString();
+    if (!next) {
+      data.total = (total * 0.01).toString();
+    } else {
+      data.next = (next * 0.01).toString();
+    }
+  }
+  if (buttonName === '.') {
+    if (!next && !/[.]/.test(total)) {
+      data.total = `${total}.`;
+    } else if (next && !/[.]/.test(next)) {
+      data.next = `${next}.`;
+    }
   }
   if (buttonName === '=') {
-    // Need to understand what next is before I can implement all conditionals
+    data.total = operate(total, next, operation).toString();
+    data.next = '';
+    data.operation = '';
   }
+
   return data;
 }

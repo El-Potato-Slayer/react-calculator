@@ -1,13 +1,38 @@
 import PropTypes from 'prop-types';
 
-const Display = ({ result }) => (<div>{result}</div>);
+function Display({ data }) {
+  let { total, next, operation } = data;
+  if (!total) {
+    total = '0';
+  }
+  if (!operation) {
+    operation = '';
+  }
+  if (!next) {
+    next = '';
+  }
+  return (
+
+    <div>
+      {
+        total
+      }
+      {
+        operation
+      }
+      {
+        next
+      }
+    </div>
+  );
+}
 
 Display.propTypes = {
-  result: PropTypes.string,
+  data: PropTypes.string,
 };
 
 Display.defaultProps = {
-  result: '0',
+  data: '0',
 };
 
 export default Display;
