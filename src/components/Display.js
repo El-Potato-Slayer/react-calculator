@@ -28,11 +28,15 @@ function Display({ data }) {
 }
 
 Display.propTypes = {
-  data: PropTypes.string,
+  data: PropTypes.shape({
+    total: PropTypes.string,
+    next: PropTypes.string,
+    operation: PropTypes.string,
+  }),
 };
 
 Display.defaultProps = {
-  data: '0',
+  data: {},
 };
 
 export default Display;
