@@ -1,13 +1,15 @@
-.button-panel{
+.button-panel {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .button-panel > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto;
 }
+
 .button-panel > div:last-of-type {
   grid-template-columns: 2fr 1fr 1fr;
 }
