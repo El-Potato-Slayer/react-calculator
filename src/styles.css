@@ -1,0 +1,12 @@
+.button {
+  background: #E0E0E0;
+  width: 6rem;
+  height: 3rem;
+  border: 1px #D1D1D1 solid;
+  font-size: 1rem;
+}
+
+.button:last-of-type {
+  background: #F5913E;
+}
+/*# sourceMappingURL=styles.css.map */
