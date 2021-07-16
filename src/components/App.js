@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import { Component } from 'react';
 import '../styles.css';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
@@ -24,10 +24,12 @@ class App extends Component {
     const data = this.state;
 
     return (
-      <>
-        <Display data={data} />
-        <ButtonPanel clickHandler={this.handleClick} />
-      </>
+      <div className="calculator">
+        <div>
+          <Display data={data} />
+          <ButtonPanel clickHandler={this.handleClick} />
+        </div>
+      </div>
     );
   }
 }

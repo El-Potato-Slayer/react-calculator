@@ -13,16 +13,18 @@ function Display({ data }) {
   }
   return (
 
-    <div>
-      {
-        total
-      }
-      {
-        operation
-      }
-      {
-        next
-      }
+    <div className="display">
+      <span>
+        {
+          total
+        }
+        {
+          operation
+        }
+        {
+          next
+        }
+      </span>
     </div>
   );
 }

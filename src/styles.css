@@ -1,9 +1,9 @@
 .button {
   background: #E0E0E0;
-  min-width: 5.8rem;
+  min-width: 5.75rem;
   height: 3rem;
   border: 0.5px #D1D1D1 solid;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .button:last-of-type {
@@ -34,5 +34,50 @@
 .button-panel > div:last-of-type {
   -ms-grid-columns: 2fr 1fr 1fr;
       grid-template-columns: 2fr 1fr 1fr;
+}
+
+.display {
+  background-color: #858694;
+  color: white;
+  width: 23rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.25rem;
+}
+
+.display > span {
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculator {
+  height: calc(100vh - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */
