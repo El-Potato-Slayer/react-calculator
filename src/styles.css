@@ -81,6 +81,29 @@
   padding: 0 1rem;
 }
 
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home h3 {
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+
+.home p {
+  font-size: 1rem;
+  text-align: center;
+}
+
 *,
 *::before,
 *::after {
@@ -88,6 +111,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .calculator {

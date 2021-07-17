@@ -29,196 +29,198 @@ class App extends Component {
       <BrowserRouter>
         <Navbar />
         <Route exact path="/">
-          <h3>Welcome to our page!</h3>
-          <p>
-            We&apos;re no strangers to love
-            {' '}
-            <br />
-            You know the rules and so do I
-            {' '}
-            <br />
-            A full commitment&apos;s what I&apos;m thinking of
-            {' '}
-            <br />
-            You wouldn&apos;t get this from any other guy
-            {' '}
-            <br />
-            <br />
-            <br />
-            I just wanna tell you how I&apos;m feeling
-            {' '}
-            <br />
-            Gotta make you understand
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-            Never gonna tell a lie and hurt you
-            {' '}
-            <br />
-            <br />
-            <br />
-            We&apos;ve known each other for so long
-            {' '}
-            <br />
-            Your heart&apos;s been aching but you&apos;re too shy to say it
-            {' '}
-            <br />
-            Inside we both know what&apos;s been going on
-            {' '}
-            <br />
-            We know the game and we&apos;re gonna play it
-            {' '}
-            <br />
-            And if you ask me how I&apos;m feeling
-            {' '}
-            <br />
-            Don&apos;t tell me you&apos;re too blind to see
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-            Never gonna tell a lie and hurt you
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-            Never gonna tell a lie and hurt you
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give, never gonna give
-            {' '}
-            <br />
-            (Give you up)
-            {' '}
-            <br />
-            <br />
-            <br />
-            We&apos;ve known each other for so long
-            {' '}
-            <br />
-            Your heart&apos;s been aching but you&apos;re too shy to say it
-            {' '}
-            <br />
-            Inside we both know what&apos;s been going on
-            {' '}
-            <br />
-            We know the game and we&apos;re gonna play it
-            {' '}
-            <br />
-            <br />
-            <br />
-            I just wanna tell you how I&apos;m feeling
-            {' '}
-            <br />
-            Gotta make you understand
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-            Never gonna tell a lie and hurt you
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-            Never gonna tell a lie and hurt you
-            {' '}
-            <br />
-            <br />
-            <br />
-            Never gonna give you up
-            {' '}
-            <br />
-            Never gonna let you down
-            {' '}
-            <br />
-            Never gonna run around and desert you
-            {' '}
-            <br />
-            Never gonna make you cry
-            {' '}
-            <br />
-            Never gonna say goodbye
-            {' '}
-            <br />
-          </p>
+          <div className="home">
+            <h3>Welcome to our page!</h3>
+            <p>
+              We&apos;re no strangers to love
+              {' '}
+              <br />
+              You know the rules and so do I
+              {' '}
+              <br />
+              A full commitment&apos;s what I&apos;m thinking of
+              {' '}
+              <br />
+              You wouldn&apos;t get this from any other guy
+              {' '}
+              <br />
+              <br />
+              <br />
+              I just wanna tell you how I&apos;m feeling
+              {' '}
+              <br />
+              Gotta make you understand
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+              Never gonna tell a lie and hurt you
+              {' '}
+              <br />
+              <br />
+              <br />
+              We&apos;ve known each other for so long
+              {' '}
+              <br />
+              Your heart&apos;s been aching but you&apos;re too shy to say it
+              {' '}
+              <br />
+              Inside we both know what&apos;s been going on
+              {' '}
+              <br />
+              We know the game and we&apos;re gonna play it
+              {' '}
+              <br />
+              And if you ask me how I&apos;m feeling
+              {' '}
+              <br />
+              Don&apos;t tell me you&apos;re too blind to see
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+              Never gonna tell a lie and hurt you
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+              Never gonna tell a lie and hurt you
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give, never gonna give
+              {' '}
+              <br />
+              (Give you up)
+              {' '}
+              <br />
+              <br />
+              <br />
+              We&apos;ve known each other for so long
+              {' '}
+              <br />
+              Your heart&apos;s been aching but you&apos;re too shy to say it
+              {' '}
+              <br />
+              Inside we both know what&apos;s been going on
+              {' '}
+              <br />
+              We know the game and we&apos;re gonna play it
+              {' '}
+              <br />
+              <br />
+              <br />
+              I just wanna tell you how I&apos;m feeling
+              {' '}
+              <br />
+              Gotta make you understand
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+              Never gonna tell a lie and hurt you
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+              Never gonna tell a lie and hurt you
+              {' '}
+              <br />
+              <br />
+              <br />
+              Never gonna give you up
+              {' '}
+              <br />
+              Never gonna let you down
+              {' '}
+              <br />
+              Never gonna run around and desert you
+              {' '}
+              <br />
+              Never gonna make you cry
+              {' '}
+              <br />
+              Never gonna say goodbye
+              {' '}
+              <br />
+            </p>
+          </div>
         </Route>
         <Route path="/calculator">
           <div className="calculator">

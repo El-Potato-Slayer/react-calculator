@@ -2,6 +2,7 @@
 @import './styles/buttonpanel';
 @import './styles/display';
 @import './styles/navbar';
+@import './styles/home';
 
 *,
 *::before,
@@ -9,6 +10,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .calculator{
