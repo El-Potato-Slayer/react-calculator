@@ -1,13 +1,13 @@
 .button {
-  background: #E0E0E0;
+  background: #e0e0e0;
   min-width: 5.75rem;
   height: 3rem;
-  border: 0.5px #D1D1D1 solid;
+  border: 0.5px #d1d1d1 solid;
   font-size: 0.75rem;
 }
 
 .button:last-of-type {
-  background: #F5913E;
+  background: #f5913e;
 }
 
 .button-panel {
@@ -59,6 +59,17 @@
   font-size: 1.25rem;
 }
 
+.navbar {
+  background: gray;
+  padding: 1.5rem 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
 *,
 *::before,
 *::after {
@@ -69,7 +80,7 @@
 }
 
 .calculator {
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 4.125rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

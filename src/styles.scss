@@ -1,6 +1,7 @@
 @import './styles/button';
 @import './styles/buttonpanel';
 @import './styles/display';
+@import './styles/navbar';
 
 *,
 *::before,
@@ -11,7 +12,7 @@
 }
 
 .calculator{
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 4.125rem);
   display: flex;
   justify-content: center;
   align-items: center;
