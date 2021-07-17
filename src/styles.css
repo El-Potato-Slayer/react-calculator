@@ -62,6 +62,17 @@
 .navbar {
   background: gray;
   padding: 1.5rem 1rem;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar p {
+  font-size: 1.25rem;
 }
 
 .navbar a {

@@ -29,7 +29,6 @@ class App extends Component {
       <BrowserRouter>
         <Navbar />
         <Route exact path="/">
-          <h1>Mathematics Meow Meow</h1>
           <h3>Welcome to our page!</h3>
           <p>
             We&apos;re no strangers to love

@@ -1,6 +1,13 @@
 .navbar{
   background: gray;
   padding: 1.5rem 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar p {
+  font-size: 1.25rem;
 }
 
 .navbar a{
