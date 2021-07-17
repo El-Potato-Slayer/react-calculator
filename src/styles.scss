@@ -3,6 +3,7 @@
 @import './styles/display';
 @import './styles/navbar';
 @import './styles/home';
+@import './styles/quote';
 
 *,
 *::before,
@@ -14,7 +15,7 @@
 }
 
 .calculator{
-  height: calc(100vh - 4.125rem);
+  height: calc(100vh - 4.375rem);
   display: flex;
   justify-content: center;
   align-items: center;

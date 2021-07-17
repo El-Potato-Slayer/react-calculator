@@ -72,7 +72,7 @@
 }
 
 .navbar p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .navbar a {
@@ -104,6 +104,24 @@
   text-align: center;
 }
 
+.quote-wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 4.375rem);
+}
+
+.quote-wrapper q,
+.quote-wrapper p {
+  font-size: 1.75rem;
+  display: block;
+  width: 56ch;
+}
+
+.quote-wrapper div p {
+  padding: 1rem 0;
+}
+
 *,
 *::before,
 *::after {
@@ -115,7 +133,7 @@
 }
 
 .calculator {
-  height: calc(100vh - 4.125rem);
+  height: calc(100vh - 4.375rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

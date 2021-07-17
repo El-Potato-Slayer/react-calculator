@@ -1,0 +1,16 @@
+.quote-wrapper {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 4.375rem);
+}
+
+.quote-wrapper q,
+.quote-wrapper p {
+  font-size: 1.75rem;
+  display: block;
+  width: 56ch;
+}
+
+.quote-wrapper div p {
+  padding: 1rem 0;
+}

@@ -231,10 +231,15 @@ class App extends Component {
           </div>
         </Route>
         <Route path="/quote">
-          <p>
-            Mathematics is not about pregnancies, cookies, KFC or chocie milks;
-            it is about numbers. - William Shakespeare
-          </p>
+          <div className="quote-wrapper">
+            <div>
+              <q>
+                Mathematics is not about pregnancies, cookies, KFC or chocie milks;
+                it is about numbers.
+              </q>
+              <p>- William Shakespeare</p>
+            </div>
+          </div>
         </Route>
       </BrowserRouter>
     );
