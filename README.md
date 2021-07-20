@@ -1,12 +1,13 @@
-# Calculator
-A calculator application.
+# Mathematics Meow Meow
+A calculator application built with React. Includes a home, a calculator, and a quote page.
 
-[Live Demo](https://react-calculator-ochre.vercel.app/)
+![image](https://user-images.githubusercontent.com/43865875/126393555-9a4bf3f1-3986-41df-b41c-536e3784fcca.png)
+
+[Live Demo](https://react-calculator-bhm0xmnr6-el-potato-slayer.vercel.app/)
 
 ## Built with
 - HTML
 - CSS
-- JavaScript
 - React
 
 ## Getting started
@@ -37,7 +38,7 @@ A calculator application.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/El-Potato-Slayer/react-calc/issues).
+Feel free to check the [issues page](https://github.com/El-Potato-Slayer/react-calculator/issues).
 
 
 ## Show your support
