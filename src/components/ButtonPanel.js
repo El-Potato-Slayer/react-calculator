@@ -13,7 +13,7 @@ function ButtonPanel({ clickHandler }) {
   }
 
   return (
-    <div className="button-panel">
+    <div data-testid="button-panel" className="button-panel">
       {
         buttonNames.map((group) => (
           <div key={group}>

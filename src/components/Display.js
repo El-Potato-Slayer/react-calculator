@@ -13,7 +13,7 @@ function Display({ data }) {
   }
   return (
 
-    <div className="display">
+    <div data-testid="display" className="display">
       <span>
         {
           total
