@@ -6,11 +6,15 @@
 
 .quote-wrapper q,
 .quote-wrapper p {
-  font-size: 1.75rem;
   display: block;
   width: 56ch;
 }
 
+.quote-wrapper q {
+  font-size: 1.5rem;
+}
+
 .quote-wrapper div p {
+  font-size: 1.75rem;
   padding: 1rem 0;
 }
