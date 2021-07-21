@@ -6,7 +6,7 @@ function Button({ name, clickHandler }) {
   }
 
   return (
-    <button type="button" onClick={() => { handleClick(name); }}>{name}</button>
+    <button data-testid="button" className="button" type="button" onClick={() => { handleClick(name); }}>{name}</button>
   );
 }
 

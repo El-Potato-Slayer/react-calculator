@@ -1,0 +1,143 @@
+.button {
+  background: #e0e0e0;
+  min-width: 5.75rem;
+  height: 3rem;
+  border: 0.5px #d1d1d1 solid;
+  font-size: 0.75rem;
+}
+
+.button:last-of-type {
+  background: #f5913e;
+}
+
+.button-panel {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.button-panel > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.button-panel > div:last-of-type {
+  -ms-grid-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.display {
+  background-color: #858694;
+  color: white;
+  width: 23rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  justify-content: right;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.display > span {
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.navbar {
+  background: gray;
+  padding: 1.5rem 1rem;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar p {
+  font-size: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.home {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.home h3 {
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+
+.home p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.quote-wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: calc(100vh - 4.375rem);
+}
+
+.quote-wrapper q,
+.quote-wrapper p {
+  display: block;
+  width: 56ch;
+}
+
+.quote-wrapper q {
+  font-size: 1.5rem;
+}
+
+.quote-wrapper div p {
+  font-size: 1.75rem;
+  padding: 1rem 0;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.calculator {
+  height: calc(100vh - 4.375rem);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

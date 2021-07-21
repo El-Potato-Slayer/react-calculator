@@ -1,0 +1,22 @@
+@import './styles/button';
+@import './styles/buttonpanel';
+@import './styles/display';
+@import './styles/navbar';
+@import './styles/home';
+@import './styles/quote';
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.calculator {
+  height: calc(100vh - 4.375rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

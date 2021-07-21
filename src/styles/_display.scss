@@ -1,0 +1,16 @@
+.display {
+  background-color: #858694;
+  color: white;
+  width: 23rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.display > span {
+  text-align: right;
+  font-size: 1.25rem;
+}

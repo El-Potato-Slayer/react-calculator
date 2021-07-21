@@ -39,9 +39,11 @@ export default function calculate({ total, next, operation }, buttonName) {
 
     case '+/-':
       if (!next) {
-        data.total *= -1;
+        const output = data.total * -1;
+        data.total = output.toString();
       } else {
-        data.next *= -1;
+        const output = data.next * -1;
+        data.next = output.toString();
       }
       break;
 
@@ -70,37 +72,6 @@ export default function calculate({ total, next, operation }, buttonName) {
     default:
       break;
   }
-  // if (buttonName === 'AC') {
-  //   data.total = '0';
-  //   data.next = '';
-  //   data.operation = '';
-  // }
-  // if (buttonName === '+/-') {
-  //   if (!next) {
-  //     data.total *= -1;
-  //   } else {
-  //     data.next *= -1;
-  //   }
-  // }
-  // if (buttonName === '%') {
-  //   if (!next) {
-  //     data.total = (total * 0.01).toString();
-  //   } else {
-  //     data.next = (next * 0.01).toString();
-  //   }
-  // }
-  // if (buttonName === '.') {
-  //   if (!next && !/[.]/.test(total)) {
-  //     data.total = `${total}.`;
-  //   } else if (next && !/[.]/.test(next)) {
-  //     data.next = `${next}.`;
-  //   }
-  // }
-  // if (buttonName === '=') {
-  //   data.total = operate(total, next, operation).toString();
-  //   data.next = '';
-  //   data.operation = '';
-  // }
 
   return data;
 }
