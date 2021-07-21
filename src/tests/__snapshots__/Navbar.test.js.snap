@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<nav
+  className="navbar"
+  data-testid="navbar"
+>
+  <p>
+    Mathematics Meow Meow
+  </p>
+  <div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calculator"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quote"
+      onClick={[Function]}
+    >
+      Quote Of The Day
+    </a>
+  </div>
+</nav>
+`;
